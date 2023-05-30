@@ -126,10 +126,22 @@ class _ZikirViewState extends State<ZikirView> {
             InkWell(
               onTap: () {},
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   children: [
-                    SvgPicture.asset('assets/icons/1.svg'),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: SvgPicture.asset('assets/icons/1.svg'),
+                    ),
+                    SvgPicture.asset('assets/icons/Звук.svg'),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    SvgPicture.asset('assets/icons/Color.svg'),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    SvgPicture.asset('assets/icons/Тесме.svg'),
                   ],
                 ),
               ),
